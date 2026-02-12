@@ -16,12 +16,11 @@ function NavBar() {
   window.addEventListener("scroll", scrollHandler);
 
   return (
-    // 2. Use className em vez de style inline
     <nav className={navColour ? "navbar-container sticky" : "navbar-container"}>
       
       <div className="nav-logo">
         <a href="/">
-          <img src={logo} alt="Logo do Site" />
+          <img src={logo} alt="Logotipo" />
         </a>
       </div>
 
