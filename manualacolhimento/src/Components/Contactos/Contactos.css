@@ -1,10 +1,13 @@
 /* Contactos.css */
 
+html, body {
+  overflow: hidden; /* Remove o scroll global */
+}
+
 .min-h-screen {
   min-height: 100vh;
   background-color: #f8fafc;
   padding: 2rem;
-  padding-top: 100px; /* Margem extra para não bater na Navbar */
   font-family: 'Inter', system-ui, -apple-system, sans-serif;
 }
 
@@ -42,18 +45,18 @@ thead tr {
 /* Alinhamento das Colunas */
 th, td {
   padding: 1.25rem 2rem;
-  text-align: center; /* Garante que tudo comece à esquerda */
+  text-align: left; 
   vertical-align: middle;
 }
 
 /* Coluna Nome */
 th:nth-child(1), td:nth-child(1) {
-  width: 35%;
+  width: 45%;
 }
 
 /* Coluna Contacto */
 th:nth-child(2), td:nth-child(2) {
-  width: 65%;
+  width: 55%;
 }
 
 /* Ajuste dos itens de contacto (Ícone + Texto) */
