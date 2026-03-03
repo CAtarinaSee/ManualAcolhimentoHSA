@@ -1,0 +1,94 @@
+/* Contactos.css */
+
+.min-h-screen {
+  min-height: 100vh;
+  background-color: #f8fafc;
+  padding: 2rem;
+  padding-top: 100px; /* Margem extra para não bater na Navbar */
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+.max-w-6xl {
+  max-width: 1000px;
+  margin: 0 auto;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e2e8f0;
+}
+
+.border-b {
+  padding: 1.5rem 2rem;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+h2.text-xl {
+  font-size: 1.5rem;
+  color: #1e293b;
+  font-weight: 700;
+}
+
+/* Estrutura da Tabela */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed; /* Crucial para o alinhamento das colunas */
+}
+
+thead tr {
+  background-color: #f8fafc;
+}
+
+/* Alinhamento das Colunas */
+th, td {
+  padding: 1.25rem 2rem;
+  text-align: center; /* Garante que tudo comece à esquerda */
+  vertical-align: middle;
+}
+
+/* Coluna Nome */
+th:nth-child(1), td:nth-child(1) {
+  width: 35%;
+}
+
+/* Coluna Contacto */
+th:nth-child(2), td:nth-child(2) {
+  width: 65%;
+}
+
+/* Ajuste dos itens de contacto (Ícone + Texto) */
+.contact-item-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 8px;
+  color: #475569;
+}
+
+.contact-item-row:last-child {
+  margin-bottom: 0;
+}
+
+.contact-item-row svg {
+  flex-shrink: 0; /* Impede o ícone de achatar */
+}
+
+tbody tr {
+  border-bottom: 1px solid #f1f5f9;
+  transition: background-color 0.2s;
+}
+
+tbody tr:hover {
+  background-color: #f8fafc;
+}
+
+.font-medium {
+  font-weight: 600;
+  color: #1e293b;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .min-h-screen { padding: 1rem; padding-top: 80px; }
+  table { table-layout: auto; } /* Liberta a tabela em telemóveis */
+}
