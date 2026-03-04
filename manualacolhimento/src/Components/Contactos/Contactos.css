@@ -1,7 +1,7 @@
 /* Contactos.css */
 
 html, body {
-  overflow: hidden; /* Remove o scroll global */
+  /* overflow: hidden; Remove o scroll global */
 }
 
 .min-h-screen {
@@ -51,13 +51,27 @@ th, td {
 
 /* Coluna Nome */
 th:nth-child(1), td:nth-child(1) {
-  width: 45%;
+  width: 25%;
+}
+
+/*Coluna Função*/
+
+th:nth-child(2), td:nth-child(2) {
+  width: 15%;
 }
 
 /* Coluna Contacto */
-th:nth-child(2), td:nth-child(2) {
-  width: 55%;
+th:nth-child(3), td:nth-child(3) {
+  width: 45%;
 }
+
+/* Coluna de Local de trabalho */
+th:nth-child(4), td:nth-child(4) {
+  width: 15%;
+}
+
+
+
 
 /* Ajuste dos itens de contacto (Ícone + Texto) */
 .contact-item-row {
