@@ -27,6 +27,7 @@ function NavBar() {
       <ul className="nav-links">
         <li><a href="/Armazens" className="nav-item-link">Armazéns</a></li>
         <li><a href="/Abastecimento" className="nav-item-link">Abastecimento</a></li>
+        <li><a href="/Imobilizado" className="nav-item-link">Imobilizado</a></li>
         <li><a href="/GHAF" className="nav-item-link">GHAF</a></li>
         <li><a href="/BoasPraticas" className="nav-item-link">Boas práticas</a></li>
         <li><a href="/Contactos" className="nav-item-link">Contactos</a></li>
