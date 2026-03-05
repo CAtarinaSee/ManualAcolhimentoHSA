@@ -1,0 +1,141 @@
+.ghaf-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+  font-family: 'Inter', sans-serif;
+  color: #334155;
+}
+
+.ghaf-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.system-tag {
+  font-size: 0.75rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #3b82f6;
+  letter-spacing: 0.1em;
+  margin-bottom: 0.5rem;
+}
+
+.ghaf-header h1 {
+  font-size: 3.5rem;
+  font-weight: 900;
+  margin: 0;
+  color: #0f172a;
+}
+
+.ghaf-header .subtitle {
+  font-size: 1.25rem;
+  color: #64748b;
+  margin-top: 0.5rem;
+}
+
+.header-line {
+  width: 60px;
+  height: 4px;
+  background: #3b82f6;
+  margin: 1.5rem auto;
+  border-radius: 2px;
+}
+
+.ghaf-intro {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 4rem;
+  line-height: 1.6;
+  font-size: 1.1rem;
+}
+
+/* Features Grid */
+.ghaf-features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-bottom: 5rem;
+}
+
+.feature-item {
+  display: flex;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  background: #f8fafc;
+  border-radius: 16px;
+  border: 1px solid #e2e8f0;
+  transition: all 0.2s ease;
+}
+
+.feature-item:hover {
+  background: #ffffff;
+  border-color: #3b82f6;
+  box-shadow: 0 10px 15px -3px rgba(59, 130, 246, 0.1);
+}
+
+.feature-icon {
+  color: #3b82f6;
+  background: #eff6ff;
+  padding: 12px;
+  border-radius: 12px;
+  height: fit-content;
+}
+
+.feature-text h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.1rem;
+  color: #1e293b;
+}
+
+.feature-text p {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #64748b;
+}
+
+/* Impact Section */
+.ghaf-impact {
+  background: #0f172a;
+  border-radius: 24px;
+  padding: 3rem;
+  color: white;
+}
+
+.impact-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 2rem;
+  color: #3b82f6;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+.benefits-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+.benefit-tag {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 1rem;
+  color: #94a3b8;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  background: #3b82f6;
+  border-radius: 50%;
+  box-shadow: 0 0 10px #3b82f6;
+}
+
+@media (max-width: 600px) {
+  .ghaf-header h1 { font-size: 2.5rem; }
+  .ghaf-impact { padding: 2rem 1.5rem; }
+}

@@ -1,20 +1,74 @@
-h1 {
-  color: #007bff;
-  font-size: 2rem;
-  text-align: center;
+.home {
+  
+  background-color: transparent;
+  min-height: 100vh;
 }
 
-img {
-  display: block;
+.home-content {
+  max-width: 1200px;
   margin: 0 auto;
-  max-width: 60%;
-  height: auto;
+  text-align: center;
 }
 
-p {
-  color: #333;
+.home-image {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 15px;
+  margin: 2rem 0;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.home-subtitle {
   font-size: 1.1rem;
-  line-height: 1.6;
-  margin-bottom: 20px;
-  text-align: center;
+  color: #64748b;
+  margin-bottom: 3rem;
+}
+
+/* Grid de Botões */
+.navigation-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.nav-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  gap: 10px;
+}
+
+.nav-card span {
+  font-weight: 600;
+  color: #1e293b;
+}
+
+.nav-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  border-color: #cbd5e1;
+}
+
+/* Cores dos Ícones */
+.nav-icon { color: #64748b; }
+.blue:hover { border-top: 4px solid #3b82f6; }
+.emerald:hover { border-top: 4px solid #10b981; }
+.amber:hover { border-top: 4px solid #f59e0b; }
+.slate:hover { border-top: 4px solid #475569; }
+.indigo:hover { border-top: 4px solid #6366f1; }
+.rose:hover { border-top: 4px solid #f43f5e; }
+
+@media (max-width: 600px) {
+  .navigation-grid {
+    grid-template-columns: 1fr 1fr; /* 2 colunas em mobile */
+    gap: 1rem;
+  }
 }

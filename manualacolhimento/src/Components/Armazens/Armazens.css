@@ -31,10 +31,10 @@
 }
 
 .card:hover { transform: translateY(-5px); }
-.border-clinico { border-color: #3b82f6; }
-.border-hoteleiro { border-color: #10b981; }
+.border-clinico { border-color: #71deff; }
+.border-hoteleiro { border-color: #aa66b6; }
 .border-administrativo { border-color: #f59e0b; }
-.border-manutencao { border-color: #64748b; }
+.border-manutencao { border-color: #3d6c48; }
 
 /* Estilos do Popup */
 .modal-overlay {

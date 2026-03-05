@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Armazens.css';
-import { Stethoscope, Trash2, ClipboardList, Settings, CheckCircle2, X } from 'lucide-react';
+import { Stethoscope, Sparkles, ClipboardList, Settings, CheckCircle2, X } from 'lucide-react';
 
 const Armazens = () => {
   const [selecionado, setSelecionado] = useState(null);
@@ -17,7 +17,7 @@ const Armazens = () => {
       titulo: "Armazém Hoteleiro", 
       desc: "Consumíveis de limpeza e higienização.", 
       detalhe: "Destinado ao armazenamento de consumíveis de apoio à limpeza, higienização e desinfeção de espaços, garantindo fornecimento contínuo aos serviços operacionais.",
-      icon: <Trash2 />, 
+      icon: <Sparkles/>, 
       classe: "border-hoteleiro" 
     },
     { 
@@ -44,6 +44,7 @@ const Armazens = () => {
   return (
     <div className="container">
       <header className="header">
+        <div className="abs-tag">Logística Hospitalar</div>
         <h1>Armazéns: Tipologia e Organização</h1>
         <p className="intro">Os armazéns hospitalares asseguram a gestão eficiente dos materiais essenciais ao funcionamento da instituição, garantindo condições adequadas de armazenamento, segurança e rastreabilidade. No nosso serviço, a estrutura encontra-se organizada nas seguintes tipologias.</p>
         <p>Clique nos cartões para ver detalhes sobre cada tipologia:</p>

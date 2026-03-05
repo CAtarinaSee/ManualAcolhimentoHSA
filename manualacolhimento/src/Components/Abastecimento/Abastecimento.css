@@ -1,0 +1,120 @@
+.abs-wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+  font-family: 'Inter', system-ui, sans-serif;
+  color: #1e293b;
+}
+
+.abs-hero {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.abs-tag {
+  display: inline-block;
+  padding: 4px 12px;
+  background: #eff6ff;
+  color: #2563eb;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.abs-hero h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #0f172a;
+  letter-spacing: -0.02em;
+}
+
+/* Estilo Flow (Lista de Fluxo) */
+.flow-section {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin-bottom: 6rem;
+}
+
+.flow-item {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.flow-icon-container {
+  flex-shrink: 0;
+  width: 64px;
+  height: 64px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.flow-content h3 {
+  font-size: 1.25rem;
+  margin: 0.25rem 0 0.5rem 0;
+  color: #1e293b;
+}
+
+.flow-sub {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.flow-content p {
+  color: #64748b;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Objetivos Operacionais */
+.goals-container {
+  background: #f8fafc;
+  padding: 3rem;
+  border-radius: 32px;
+}
+
+.goals-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+}
+
+.target-icon { color: #2563eb; }
+
+.goals-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+}
+
+.goal-box {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 16px;
+  transition: transform 0.2s;
+}
+
+.goal-box:hover { transform: scale(1.03); }
+
+.goal-icon { margin-bottom: 1rem; }
+.goal-icon.orange { color: #f59e0b; }
+.goal-icon.green { color: #10b981; }
+.goal-icon.blue { color: #3b82f6; }
+
+.goal-box h4 { margin: 0 0 0.5rem 0; font-size: 1.1rem; }
+.goal-box p { margin: 0; font-size: 0.9rem; color: #64748b; }
+
+@media (max-width: 600px) {
+  .flow-item { flex-direction: column; gap: 1rem; }
+  .abs-hero h1 { font-size: 1.8rem; }
+}

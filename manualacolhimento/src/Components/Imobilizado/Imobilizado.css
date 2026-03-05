@@ -1,0 +1,78 @@
+/* Reutilizando a base comum para manter a coerência */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: sans-serif;
+  background-color: transparent;
+}
+
+.header { text-align: center; margin-bottom: 2rem; }
+
+.intro {
+  max-width: 800px;
+  margin: 0 auto 2rem auto;
+  color: #64748b;
+  line-height: 1.6;
+}
+
+/* Cards em linha horizontal (como nos Armazéns) */
+.grid-cards {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  overflow-x: auto;
+  padding: 1rem 0;
+  margin-bottom: 3rem;
+}
+
+.card {
+  min-width: 250px;
+  flex: 1;
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  border-top: 5px solid #ccc; /* Borda no topo para coerência */
+  transition: transform 0.2s;
+}
+
+.card:hover { transform: translateY(-5px); }
+
+/* Cores das Bordas (Sincronizadas com as outras páginas) */
+.border-clinico { border-color: #3b82f6; }
+.border-ti { border-color: #ff2323; }
+.border-hoteleiro { border-color: #b6ffe7; }
+.border-manutencao { border-color: #ffa44f; }
+
+.card-icon {
+  margin-bottom: 1rem;
+  padding: 10px;
+  background: #f3f4f6;
+  border-radius: 50%;
+  width: fit-content;
+  color: #4b5563;
+}
+
+/* Secção de Atividades (Igual à secção de Princípios) */
+.principios-section { text-align: center; }
+
+.grid-principios {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 1.5rem;
+}
+
+.principio-item {
+  background: #f0f7ff;
+  padding: 10px 20px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.9rem;
+  color: #1e40af;
+  border: 1px solid #dbeafe;
+}
