@@ -8,7 +8,7 @@
 }
 
 .max-w-6xl {
-  max-width: 1100px;
+  max-width: 1200px;
   margin: 0 auto;
   background: #ffffff;
   border-radius: 12px;
@@ -31,7 +31,7 @@ h2.text-xl {
 table {
   width: 100%;
   border-collapse: collapse;
-  table-layout: fixed; /* Crucial para o alinhamento das colunas */
+  table-layout: fixed; 
 }
 
 thead tr {
@@ -45,37 +45,24 @@ th, td {
   vertical-align: middle;
 }
 
-/* Coluna Nome */
-th:nth-child(1), td:nth-child(1) {
-  width: 25%;
-}
+/* Larguras das Colunas */
+th:nth-child(1), td:nth-child(1) { width: 25%; }
+th:nth-child(2), td:nth-child(2) { width: 15%; }
+th:nth-child(3), td:nth-child(3) { width: 45%; }
+th:nth-child(4), td:nth-child(4) { width: 15%; }
 
-/*Coluna Função*/
-
-th:nth-child(2), td:nth-child(2) {
-  width: 15%;
-}
-
-/* Coluna Contacto */
-th:nth-child(3), td:nth-child(3) {
-  width: 45%;
-}
-
-/* Coluna de Local de trabalho */
-th:nth-child(4), td:nth-child(4) {
-  width: 15%;
-}
-
-
-
-
-/* Ajuste dos itens de contacto (Ícone + Texto) */
+/* --- AJUSTE DOS CONTACTOS (Ícone + Espaço + Texto) --- */
 .contact-item-row {
   display: flex;
   align-items: center;
-  gap: 12px;
+  /* Aumentado o espaço geral para 16px */
+  gap: 16px; 
   margin-bottom: 8px;
   color: #475569;
+}
+
+.whitespace-pre-line {
+  white-space: pre-line;
 }
 
 .contact-item-row:last-child {
@@ -83,8 +70,16 @@ th:nth-child(4), td:nth-child(4) {
 }
 
 .contact-item-row svg {
-  flex-shrink: 0; /* Impede o ícone de achatar */
+  flex-shrink: 0;
+  /* Cor opcional para os ícones ficarem mais suaves e não competirem com o texto */
+  color: #94a3b8; 
 }
+
+/* Se quiseres ainda mais precisão, podes dar um espaço extra só no texto */
+.contact-item-row span {
+  margin-left: 4px; 
+}
+/* ---------------------------------------------------- */
 
 tbody tr {
   border-bottom: 1px solid #f1f5f9;
@@ -103,5 +98,5 @@ tbody tr:hover {
 /* Responsividade */
 @media (max-width: 768px) {
   .min-h-screen { padding: 1rem; padding-top: 80px; }
-  table { table-layout: auto; } /* Liberta a tabela em telemóveis */
+  table { table-layout: auto; }
 }
